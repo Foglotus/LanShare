@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>LanShare</title>
+	<style type="text/css">
+			.main{
+				width: 100%;
+				height: 100%;
+			}
+			.Title {
+			    width: 610px;
+			    height: 50px;
+			    border-bottom: 1px solid #ddddeb;
+			    line-height: 50px;
+			    font-size: 16px;
+			    color: #333;
+			    padding: 0 15px;
+			}
+			.Title i {
+			    display: inline-block;
+			    width: 25px;
+			    height: 25px;
+			    float: left;
+			    margin: 7px 10px 0 0;
+			}
+			.Title img{
+				width:25px;
+				height: 25px;
+			}
+			.miancon{
+				width: 640px;
+			    height: 375px;
+
+			    top: 50%;
+    			left:50%;
+			    border-radius: 10px;
+			    background: #f4f4ff;
+			}
+			.intoPic {
+			    width: 222px;
+			    height: 93px;
+			    margin: 30px auto;
+			}
+			.Inputmain {
+			    width: 305px;
+			    margin: 0 auto;
+			}
+			.Inputmain span {
+			    line-height: 40px;
+			    font-size: 16px;
+			    color: #333;
+			    display: block;
+			}
+			.Inputmain input {
+			    display: block;
+			    width: 300px;
+			    height: 40px;
+			    border: 1px solid #8380e5;
+			    background: #fff;
+			}
+		</style>
+</head>
+<script type="text/javascript" src="/web/js/jquery.min.js" ></script>
+<script type="text/javascript">
+		$(window).resize(function(){
+		    $(".miancon").css({
+		        position: "absolute",
+		        left: ($(window).width() - $(".miancon").outerWidth())/2,
+		        top: ($(window).height() - $(".miancon").outerHeight())/2
+		    });
+		});
+		$(function(){
+		    $(window).resize();
+		});
+	</script>
+<body>
+<div class="main">
+	<div class="miancon">
+		<div class="Title">
+			<i>
+				<img src="/web/image/safe.png">
+			</i>
+			动态验证
+		</div>
+		<div class="intoPic">
+			<img src="/web/image/cs.png">
+		</div>
+		<div class="Inputmain">
+			<span>请输入动态验证码</span>
+			<input style="text-align: center;" onkeyup="checkKey(this)" type="text" id="key" value="">
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="/web/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="/web/js/jquery.cookie.js"></script>
+<script type="text/javascript">
+		function checkKey(that) {
+		    var value = $(that).val().replace(/[^\d]/g, "");
+		    $(that).val(value);
+		    if ($(that).val().length > 5) {
+		        $(that).val(that.value.substr(0, 5));
+		    }
+		    value = $(that).val();
+		    if (value.length == 5) {
+		        var url ="/privilege/check.action?key="+value;
+		         $.ajax({
+			         type:'get',
+			          url:url,
+			          cache:false,
+			          dataType:'json',
+			          success:function(data){
+			          	layer.msg(data.msg);
+			          	if(data.status == "ok"){
+			          		$.cookie('uuid', data.data,{ expires: 7, path: '/' });
+			          		window.location.href = "/file/list.html";
+			          	}
+			         }
+			    });
+	       }
+	    }
+	</script>
+</html>

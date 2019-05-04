@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="lan_share" />
+    <version value="1" />
+    <list>
+        <mapping class="com.foglotus.server.model.User" />
+        <mapping class="com.foglotus.server.model.Log" />
+        <mapping class="com.foglotus.server.model.File" />
+        <mapping class="com.foglotus.network.model.DownloadFile"/>
+    </list>
+</litepal>

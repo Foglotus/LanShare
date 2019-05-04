@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.preference.PreferenceCategory
+            android:title="@string/title_server">
+        <android.support.v7.preference.EditTextPreference
+
+                android:key="@string/key_server_port_default"
+                android:title="@string/title_server_port_default"
+                android:summary="@string/summary_server_port_default"
+                android:dialogMessage="@string/dialog_server_port_default"
+                android:defaultValue="8080"/>
+
+        <android.support.v7.preference.EditTextPreference
+                android:key="@string/key_server_timeout_default"
+                android:title="@string/title_server_timeout_default"
+                android:summary="@string/summary_server_timeout_default"
+                android:dialogMessage="@string/dialog_server_timeout_default"
+                android:defaultValue="5000"/>
+        <android.support.v7.preference.SwitchPreferenceCompat
+                android:key="@string/key_safe_code"
+                android:defaultValue="true"
+                android:summary="@string/summary_safe_code"
+                android:title="@string/title_safe_code"/>
+
+        <com.foglotus.main.setting.view.ServerPathPreference
+                android:key="@string/key_server_path"
+                android:title="@string/title_server_path"
+                android:summary="@string/summary_server_path"
+                android:dialogMessage="@string/dialog_server_path"
+                android:defaultValue="5000"/>
+
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory
+            android:title="@string/title_general">
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+                android:key="@string/key_check_update"
+                android:defaultValue="true"
+                android:summary="@string/summary_check_update"
+                android:title="@string/title_check_update"/>
+        <android.support.v7.preference.SwitchPreferenceCompat
+                android:key="@string/key_upload_tips"
+                android:defaultValue="true"
+                android:summary="@string/summary_upload_tips"
+                android:title="@string/title_upload_tips"/>
+        <android.support.v7.preference.Preference
+                android:key="@string/key_about"
+                android:title="@string/title_about"/>
+
+
+        <android.support.v7.preference.Preference
+                android:key="@string/key_app_info"
+                android:title="@string/title_app_info"/>
+
+    </android.support.v7.preference.PreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>

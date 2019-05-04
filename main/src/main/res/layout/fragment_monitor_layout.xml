@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <EditText
+            android:id="@+id/search_tag_input_edit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_tag_search"
+            android:layout_margin="8dp"
+            android:hint="请输入检索Tag"
+            android:drawableStart="@mipmap/ic_search"
+            android:drawablePadding="3dp"
+            android:padding="8dp"
+            android:maxLength="20"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:autofillHints="这是啥啊"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include layout="@layout/loading" />
+    <ViewStub
+            android:id="@+id/noContentView"
+            android:layout="@layout/no_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    />
+</LinearLayout>

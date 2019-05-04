@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="rippleImageView">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="weaveView">
+        <attr name="expand_color" format="color"/>
+        <attr name="center_color" format="color"/>
+        <attr name="center_image" format="reference" />
+        <attr name="center_radius"  format="float"/>
+        <attr name="expand_width" format="integer" />
+        <attr name="expand_max_width" format="integer"/>
+        <attr name="expand_speed" format="integer" />
+    </declare-styleable>
+
+
+    <attr name="border_color" format="reference|color"/>
+    <attr name="border_width" format="dimension"/>
+    <declare-styleable name="MaterialHome">
+        <attr name="publishInfoBackground" format="reference|color" />
+        <attr name="searchIconColor" format="reference|color" />
+        <attr name="discoverSearchBg" format="reference|color" />
+    </declare-styleable>
+
+
+
+    <!--换肤颜色-->
+    <attr name="myBackground" format="color"/>
+    <attr name="myTextColor" format="color"/>
+
+
+    <!--
+    WaveLoadingView相关
+    -->
+    <declare-styleable name="WaveLoadingView">
+        <attr name="wlv_shapeType" format="enum">
+            <enum name="circle" value="0" />
+            <enum name="square" value="1" />
+        </attr>
+        <attr name="wlv_waveColor" format="color"/>
+        <attr name="wlv_waveAmplitudeRatio" format="float"/>
+        <attr name="wlv_waveLengthRation" format="float"/>
+    </declare-styleable>
+
+
+
+    <!--仿知乎相关 -->
+    <declare-styleable name="FabTagLayout">
+        <attr name="tagText" format="string" />
+    </declare-styleable>
+
+    <attr name="animationMode">
+        <enum name="fade" value="0"/>
+        <enum name="scale" value="1"/>
+        <enum name="bounce" value="2"/>
+    </attr>
+
+    <attr name="position">
+        <enum name="left_bottom" value="0"/>
+        <enum name="right_bottom" value="1"/>
+    </attr>
+
+    <declare-styleable name="MultiFloatingActionButton">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="switchFabIcon" format="reference"/>
+        <attr name="switchFabColor" format="color"/>
+        <attr name="animationDuration" format="integer"/>
+        <attr name="animationMode"/>
+        <attr name="position"/>
+    </declare-styleable>
+
+
+    <!-- 轮播相关-->
+    <declare-styleable name="BannerView">
+        <attr name="dotFocusDrawable" format="color|reference"/>
+        <attr name="dotNormalDrawable" format="color|reference"/>
+        <attr name="dotSize" format="dimension"/>
+        <attr name="dotDistance" format="dimension"/>
+        <attr name="dotLocation" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="right" value="1"/>
+            <enum name="left" value="-1"/>
+        </attr>
+        <attr name="bottomColor" format="color"/>
+        <attr name="descColor" format="color"/>
+        <attr name="widthProportion" format="float"/>
+        <attr name="heightProportion" format="float"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><!--title--></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="/web/css/file-upload.css" />
+		<style type="text/css">
+			#filelist{
+				display: block;
+			    list-style-type: disc;
+			}
+			#filelist li{
+				position: relative;
+			    display: list-item;
+			    list-style-type: none;
+			    border:dashed;
+			    border-color: #f3c500;
+				margin-top: 5px;
+			}				
+			.statusBar {
+			    height: 25px;
+			    padding: 0 7px;
+			    line-height: 16px;
+			    vertical-align: middle;
+			    position: relative;
+			}
+			
+			.statusBar .progress {
+			    border: 2px solid #00bcd4;
+			    width: 100%;
+			    background: #fff;
+			    height: 18px;
+			    position: relative;
+			    display: inline-block;
+			    text-align: center;
+			    line-height: 20px;
+			    position: relative;
+			    margin: 0 10px 0 0;
+			    border-radius: 3px;
+			}
+			.statusBar .progress span.percentage {
+			    width: 0;
+			    height: 100%;
+			    left: 0;
+			    top: 0;
+			    background: #5cb85c;
+			    position: absolute;
+			    border-radius: 3px;
+			}
+			.statusBar .progress span.text {
+				color:royalblue;
+			    position: relative;
+			    z-index: 10;
+			}
+			.filename{
+			    font-size: 12px;
+			    color: #666;
+			    margin-left: 10px;
+			    font-weight: 700;
+			    white-space :nowrap ;
+			    width: 95%;
+			    overflow: hidden;
+				text-overflow:ellipsis;
+			}
+			.file-panel{
+				position: absolute;
+			    height: 0;
+			    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#80000000', endColorstr='#80000000')\0;
+			    background: rgba( 0, 0, 0, 0.5 );
+			    width: 100%;
+			    top: 0;
+			    left: 0;
+			    overflow: hidden;
+			    z-index: 300;
+			}
+			.file-panel span {
+			    width: 24px;
+			    height: 24px;
+			    display: inline;
+			    float: right;
+			    text-indent: -9999px;
+			    overflow: hidden;
+			    background: url(/web/image/icons.png) no-repeat;
+			    margin: 5px 1px 1px;
+			    cursor: pointer;
+			}
+			.text{
+				color:white;
+			}
+			.file-panel span.cancel {
+			    background-position: -48px -24px;
+			}
+			.file-panel span.cancel:hover {
+			    background-position: -48px 0;
+			}
+			.file-panel:hover{
+				height: 30px;
+			}
+			.file_hover{
+				height: 30px;
+			}
+
+		</style>
+</head>
+<body>
+<div class="agile-its">
+	<h2>文件上传</h2>
+	<div class="w3layouts">
+	<p>点击按钮添加文件，或者拖拽到指定区域</p>
+		<div class="photos-upload-view">
+			<form id="upload" action="index.html" method="POST" enctype="multipart/form-data">
+				<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+					<div class="agileinfo">
+					<input type="submit" class="choose" value="选择文件">
+					<h3>或者</h3>
+						<input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+						<div id="filedrag">拖到这里，这里！</div>
+					</div>
+			</form>
+			<div id="messages">
+				<p>上传列表</p>
+				<ul id="filelist">	
+				</ul>
+			</div>
+		</div>
+		<div class="clearfix">
+			<input id="submitbutton" type="submit" class="choose" value="上传">
+		</div>
+		<script src="/web/js/filedrag.js"></script>
+
+
+		</div>
+</div>
+<div class="footer">
+	<p> © 2016 File Upload widget. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
+</div>
+
+<script type="text/javascript" src="/web/js/jquery.min.js"></script>
+<script type="text/javascript">
+	function deleteFile(id){
+		$(id).hide(700);
+	}
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="HomeFragmentTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="DownloadActivityTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="LanShare" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/d_secondary_text</item>
+        <item name="colorControlHighlight">@color/d_white_text</item>
+    </style>
+    <style name="LanShare.SplashActivity">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="MainActivityTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LanShare.MainActivity">
+    </style>
+
+    <style name="LanShareAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/d_secondary_text</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@color/d_alert_dialog</item>
+    </style>
+
+    <style name="LanShare.MaterialButton">
+        <item name="colorControlHighlight">@color/blue_btn_bg_pressed_color</item>
+        <item name="colorButtonNormal">@color/blue_btn_bg_color</item>
+    </style>
+
+
+    <style name="LanShare.AlertDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="LanShare.DialogBlueButton" parent="android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">31dp</item>
+        <item name="android:background">@drawable/button_blue_background</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">21dp</item>
+        <item name="android:paddingRight">21dp</item>
+        <item name="android:textColor">@color/d_secondary_text</item>
+    </style>
+
+    <style name="EditTextErrorAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/d_white_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 命名规则 类型_位置_元素名_元素部位-->
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#933b2a</color>
+    <!--  app -->
+    <!-- 全局默认-->
+    <color name="d_wall_bg">#fff5f5f5</color>
+    <color name="d_secondary_text">#757575</color>
+    <color name="d_white_text">#ffffff</color>
+    <color name="d_alert_dialog">#673AB7</color>
+
+    <!-- act-main-toolbar -->
+    <color name="a_main_toolbar_background">#ffffff</color>
+    <color name="a_main_toolbar_text">#933b2a</color>
+
+    <!-- act_main_bottom -->
+    <color name="a_main_bottom_nav">#ffffff</color>
+    <color name="a_main_bottom_navBorder">#e1e1e1</color>
+
+    <!-- home fragment -->
+    <color name="f_server_manager_default_text">#757575</color>
+    <color name="f_server_manager_btnStart_text">#FFF</color>
+    <color name="f_server_manager_btnStart_press">#83C14C</color>
+    <color name="f_server_manager_btnStart_notPress">#4CAF50</color>
+
+    <color name="f_server_manager_btnStop_press">#FF9B07</color>
+    <color name="f_server_manager_btnStop_notPress">#FF7207</color>
+    <color name="f_server_manager_board_bg">#FFF</color>
+
+    <color name="f_server_manager_status_warn">#FF9B07</color>
+    <color name="f_server_manager_status_ok">#4cc154</color>
+
+    <color name="f_server_manager_network_offline">#FF9B07</color>
+    <color name="f_server_manager_network_online">#4cc154</color>
+
+    <color name="f_home_tab_indicator">#473739</color>
+    <color name="f_home_tab_selectedText">#473739</color>
+    <color name="f_home_tab_background">#FFF</color>
+
+    <color name="f_server_manager_safe_text">#933b2a</color>
+
+    <color name="f_server_grant_search_tag_border">#e1e1e1</color>
+
+    <color name="f_web_edit_border">#933b2a</color>
+
+    <!-- 通用颜色 -->
+    <color name="split">#e6e6e6</color>
+    <color name="qq_blue">#39a3cc</color>
+    <color name="wechat_green">#4cc154</color>
+    <color name="weibo_orange">#f15e3f</color>
+    <color name="transparent">#00000000</color>
+    <color name="error">#eb3941</color>
+    <color name="success">#4cc154</color>
+
+    <color name="btn_red_bg_pressed_color">#CD5B55</color>
+    <color name="btn_red_bg_color">#DD6B55</color>
+    <color name="btn_blue_bg_color">#AEDEF4</color>
+    <color name="btn_blue_bg_pressed_color">#96BFD2</color>
+    <color name="btn_gray_bg_color">#D0D0D0</color>
+    <color name="btn_gray_bg_pressed_color">#B6B6B6</color>
+</resources>

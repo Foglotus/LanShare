@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.foglotus.main">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application>
+        <provider
+                android:name="android.support.v4.content.FileProvider"
+                android:authorities="com.foglotus.lanshare.provider"
+                tools:replace="android:authorities"
+                android:grantUriPermissions="true"
+                android:exported="false">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/filepath"
+                    tools:replace="android:resource"/>
+        </provider>
+        <activity android:name=".common.activity.MainActivity" android:windowSoftInputMode="stateVisible|adjustPan" android:launchMode="singleInstance" android:screenOrientation="portrait" />
+        <activity
+                android:name=".setting.activity.AboutActivity"
+                android:label="@string/title_about"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.foglotus.lanshare.ACTION_VIEW_ABOUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".setting.activity.OpenSourceProjectsActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".setting.activity.PrivateSourceProjectsActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".base.activity.WebViewActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".setting.activity.SettingActivity">
+
+        </activity>
+        <activity android:name=".download.activity.DownloadActivity"/>
+        <activity android:name=".common.activity.PermissionActivity"/>
+    </application>
+</manifest>

@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">main</string>
+
+    <string name="act_main_bottom_nav_home">首页</string>
+    <string name="act_main_bottom_nav_monitor">监视</string>
+    <string name="act_main_bottom_nav_web">浏览</string>
+    <string name="act_main_bottom_nav_mine">我的</string>
+
+    <!-- loading_footer -->
+    <string name="load_failed_click_to_reload">加载失败，点击可重新加载</string>
+
+
+
+    <!-- fragment_home -->
+    <string name="fragment_server_manager_server_address">主机:</string>
+    <string name="fragment_server_manager_port">端口:</string>
+    <string name="fragment_server_manager_server_btn_start">启动服务</string>
+    <string name="fragment_server_manager_server_btn_stop">停止服务</string>
+    <string name="fragment_server_manager_server_status">状态:</string>
+    <string name="fragment_server_manager_server_not_run">未运行</string>
+    <string name="fragment_server_manager_server_running">正在运行</string>
+    <string name="fragment_server_manager_server_running_host">Host:</string>
+    <string name="fragment_server_manager_server_running_port">端口:</string>
+    <string name="fragment_server_manager_server_running_time">运行时间:</string>
+    <string name="fragment_server_manager_server_running_timeout">请求超时:</string>
+    <string name="fragment_server_manager_server_net_work_status">网络状况:</string>
+    <string name="fragment_server_manager_server_net_work_offline">已断开</string>
+    <string name="fragment_server_manager_server_net_work_online">已连接</string>
+    <string name="fragment_server_manager_server_tip_port">输入2000-99999之间的数字</string>
+    <string name="fragment_server_manager_server_tip_running_timeout">输入大于5000的数字</string>
+    <string name="fragment_server_manager_server_tab_server">服务器</string>
+    <string name="fragment_server_manager_server_tab_grant">访问列表</string>
+    <string name="fragment_server_manager_server_safe_code">动态验证码</string>
+    <string name="fragment_server_manager_server_not_need_safe">本次无需验证</string>
+
+    <!-- 服务器设置 -->
+    <string name="title_server">服务器</string>
+    <string name="title_server_setting">服务器设置</string>
+    <string name="key_server_port_default">server_port_default</string>
+    <string name="title_server_port_default">端口</string>
+    <string name="summary_server_port_default">服务器默认端口号，需要大于2000以上</string>
+    <string name="dialog_server_port_default">改成你喜欢的人的生日吧，做一只快乐的小舔狗</string>
+    <string name="key_server_timeout_default">server_timeout_default</string>
+    <string name="title_server_timeout_default">超时</string>
+    <string name="summary_server_timeout_default">超时时间设置，建议大于5000毫秒</string>
+    <string name="dialog_server_timeout_default">求求你不要改，改坏了怎么办！</string>
+    <string name="key_server_upload_path_default">server_upload_path_default</string>
+    <string name="title_server_upload_path_default">上传路径</string>
+    <string name="summary_server_upload_path_default">服务器默认上传路径，可以改，但没必要！</string>
+    <string name="key_safe_code">dynamic_safe_code</string>
+    <string name="title_safe_code">动态安全码</string>
+    <string name="summary_safe_code">用于陌生访问控制</string>
+    <string name="key_server_path">server_path_default</string>
+    <string name="title_server_path">上传文件路径</string>
+    <string name="summary_server_path">请正确设置路径，否则GG！</string>
+    <string name="dialog_server_path">改成你喜欢的人的生日吧，做一只快乐的小舔狗</string>
+
+    <!-- fragment_web -->
+    <string name="btn_back">返回上一层</string>
+    <string name="title_download">下载文件</string>
+    <string name="title_upload">上传文件</string>
+    <string name="download_name">另存为:</string>
+    <string name="download_name_hint">文件名</string>
+    <string name="download_url">链接:</string>
+    <string name="download_url_hint">下载链接</string>
+    <string name="download_path">存储路径</string>
+    <string name="download_confirm">确定</string>
+    <string name="download_cancel">取消</string>
+    <string name="upload_path">上传路径</string>
+    <string name="upload_name">文件名</string>
+    <string name="upload_progress">上传进度</string>
+
+
+    <!-- activity_download -->
+    <string name="activity_download_tab_finish">已下载</string>
+    <string name="activity_download_tab_downloading">缓存中</string>
+
+    <!--常规-->
+    <string name="title_general">常规</string>
+    <string name="key_app_info">app_info</string>
+    <string name="title_app_info">应用信息</string>
+    <string name="key_about">about</string>
+    <string name="title_about">关于</string>
+    <string name="key_check_update">check_update</string>
+    <string name="title_check_update">自动更新</string>
+    <string name="summary_check_update">在合适的时候自动检查更新</string>
+    <string name="key_upload_tips">upload_tips</string>
+    <string name="title_upload_tips">上传提示</string>
+    <string name="summary_upload_tips">接收到新文件提示</string>
+
+    <!--关于页面-->
+    <string name="version">版本</string>
+    <string name="check_update_in_about_if_you_need">说实话，我不会自动更新的，设置界面东西太少了</string>
+    <string name="about_open_source_thank">LanShare的完成离不开以下开源项目的卓越贡献，在此对以下开源项目表示特别感谢</string>
+    <string name="about_open_source_list">开源项目列表</string>
+    <string name="about_private_source_thank">LanShare的完成或多或少的借鉴了以下开/非开源项目的设计，您在APP中将会看到他们的影子，在此对以下的作者们表示深深的歉意</string>
+    <string name="about_private_source_list">参考甚至抄袭的项目列表</string>
+    <string name="about_btn_check_update">检查更新</string>
+    <string name="permission_need_storage">LanShare需要存储权限才可以正常运行</string>
+
+    <string name="btn_grant_permission">授权</string>
+</resources>

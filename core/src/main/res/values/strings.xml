@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">core</string>
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+    <string name="host_tip">输入IP地址即可</string>
+    <string name="code_tip">输入安全码</string>
+</resources>

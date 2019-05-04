@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/wechat_green"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <ImageView
+                android:src="@drawable/sad"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="170dp"
+                android:layout_height="120dp"/>
+        <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/permission_need_storage"
+                android:textSize="20sp"
+                android:textColor="@color/d_white_text"
+            />
+
+        <Button
+                android:id="@+id/agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="@string/btn_grant_permission"
+                android:textSize="16sp"
+                android:textColor="@color/button_text_color"
+                android:theme="@style/LanShare.MaterialButton"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

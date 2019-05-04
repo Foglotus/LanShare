@@ -1,0 +1,79 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<link rel="stylesheet" type="text/css" href="/web/static/h-ui/css/H-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="/web/static/h-ui.admin/css/H-ui.admin.css" />
+	<link rel="stylesheet" type="text/css" href="/web/static/h-ui.admin/skin/default/skin.css" id="skin" />
+	<link rel="stylesheet" type="text/css" href="/web/static/h-ui.admin/css/style.css" />
+	<title>LanShare|<!--title--></title>
+	<style type="text/css">
+		.page-container {
+			padding-top:0px!important;
+		}
+		.dataTables_wrapper .dataTables_length {
+			float: none!important;
+			padding-top: 0;
+			padding-bottom: 5px;
+		}
+		.dataTables_wrapper .dataTables_filter {
+			float: none;
+			text-align: left;
+			padding-bottom: 10px;
+		}
+		td{
+			font-size: 8px!important;
+
+		}
+		.table th, .table td {
+			padding: 1px!important;
+		}
+		.imgDownload{
+			width:25px;
+		}
+	</style>
+</head>
+<body>
+<nav class="breadcrumb">
+	<img class="logo" width="38px" src="/web/image/logo.png" /><span style="font-size: large;">LanShare|局域分享</span>
+	<span class="r"><a href="/upload/index.html" target="_blank" class="btn btn-primary radius">上传</a></span>
+</nav>
+<div class="page-container">
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-hover table-bg table-sort">
+			<thead>
+			<tr class="text-c">
+				<th width="185">文件名</th>
+				<th width="55">类型</th>
+			</tr>
+			</thead>
+			<tbody>
+			<!--content-->
+			</tbody>
+		</table>
+	</div>
+</div>
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="/web/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/web/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/web/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="/web/js/H-ui.admin.js"></script> <!-- footer 作为公共模版分离出去-->
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="/web/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/web/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.table-sort').dataTable({
+			"aaSorting": [[ 1, "asc" ]],
+			"bStateSave": true,
+			"aLengthMenu" : [ 10, 15 ]
+		});
+
+	});
+</script>
+</body>
+</html>

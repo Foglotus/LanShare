@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground">
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/ip"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="14sp"
+                android:textColor="@color/f_server_manager_default_text"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                tools:text="IP:192.168.1.1" />
+
+        <TextView
+                android:id="@+id/feedsAndFollowersCount"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:textColor="@color/f_server_manager_default_text"
+                android:gravity="top"
+                tools:text="时间 2019-02-01 10:30:51"
+        />
+    </LinearLayout>
+    <Button
+            android:id="@+id/grantButton"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            tools:background="@drawable/server_grant_on"
+    />
+</LinearLayout>
